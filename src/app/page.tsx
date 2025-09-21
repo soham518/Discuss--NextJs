@@ -6,7 +6,11 @@ export default function Home() {
     <>
     <div>
       <h2>Home Page</h2>
-      <Button>Click Me</Button>
+      <form>
+      <Button>Sign In</Button>
+      <Button>Sign Out</Button>
+      </form>
+      
       </div></>
   );
 }
