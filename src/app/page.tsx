@@ -1,19 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { signIn } from "./actions/signin";
-import { signOut } from "./actions/signout";
-import { auth } from "@/auth";
+
 export default async function Home() {
-
-
-  
   return (
-    
-      
-        <div>
-        <h2>Home Page</h2>
-       
-
+    <div className="grid grid-cols-3 gap-4 p-3">
+      <div className="col-span-2 flex items-center">
+        <h1 className="text-xl font-bold m-2">Home Page</h1>
       </div>
-    
+      <div className="flex justify-end items-center">
+        <Button>New Topic</Button>
+      </div>
+    </div>
   );
 }
