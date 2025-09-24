@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { TopicCreate } from "@/components/topics/TopicCreate";
+// import { Button } from "@/components/ui/button";
 
 export default async function Home() {
   return (
@@ -7,7 +8,7 @@ export default async function Home() {
         <h1 className="text-xl font-bold m-2">Home Page</h1>
       </div>
       <div className="flex justify-end items-center">
-        <Button>New Topic</Button>
+        <TopicCreate></TopicCreate>
       </div>
     </div>
   );
