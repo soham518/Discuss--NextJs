@@ -13,7 +13,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "../ui/textarea";
 import { createTopic } from "@/actions/createTopic";
+import { useActionState } from "react";
 export const TopicCreate = () => {
+ const [formState, action] = useActionState(createTopic,{message:""})
+
   return (
     <Dialog>
       
