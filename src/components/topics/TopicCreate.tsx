@@ -24,7 +24,7 @@ export const TopicCreate = () => {
           <Button variant={"outline"}>New Topic</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
-          <form action={createTopic}>
+          <form action={action}>
             <DialogHeader>
               <DialogTitle>Add Topic</DialogTitle>
               <DialogDescription>
